@@ -14,10 +14,21 @@ public class Question4
      *     **
      *     *
      * 
-     * Hint: 2 loops are required. System.out.print(...) to print on single line.
+     *
+     *
+     * Hint: 2 loops are required yaya. System.out.print(...) to print on single line.
      */
      
     Scanner in = new Scanner(System.in);
-    
+    int n = in.nextInt();
+    for (int i = 0; i < n; i++)
+      {
+        for (int j = 0; j < n - i; j++)
+          {
+            System.out.print("*");
+          }
+        System.out.println();  
+      }
+      
   }
 }
