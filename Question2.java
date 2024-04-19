@@ -6,7 +6,7 @@ public class Question2
   {
     /**
      * Prompts user for height and weight, calculate and print out the BMI of the user
-     * 
+     * blahblah
      * Hint: in.nextDouble() to read double
      */
      
