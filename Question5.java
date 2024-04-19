@@ -27,6 +27,32 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    int num = in.nextInt();
+    int[] arr = new int[num];
+    for (int i = 0; i < num; i++)
+      {
+        arr[i] = in.nextInt();
+        
+      }
+    int max = 0;
+    int mode = 0;
+    for (int i = 0; i < num; i++)
+      {
+        int count = 0;
+        for (int j = 0; j < num; j++)
+          {
+            if (arr[i] == arr[j])
+            {
+              count++;
+            }
+          }
+        if (count > max)
+        {
+          max = count;
+          mode = arr[i];
+        }
+      }
+    System.out.println(mode);
     
   }
 }
